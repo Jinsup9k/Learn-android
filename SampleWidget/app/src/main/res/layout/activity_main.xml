@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="@string/person_name"
+        android:textSize="40sp"
+        android:textColor="#ffff0000"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:maxLines="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:text="한줄이 나오나 안나오나 maxLine attribute test"
+        android:padding="4dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:background="#88aabbff"/>
+
+
+</LinearLayout>
