@@ -1,57 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="15dp"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/textArea"
+    <EditText
+        android:id="@+id/smsInput"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        >
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#fff0f000"
-            android:ems="80"
-            android:gravity="top|start"
-            android:inputType="textPersonName"
-            android:padding="15dp"
-            android:text="입력상자" />
-
-    </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="45dp"
+        android:inputType="textMultiLine"
+        android:gravity="start"
+        android:padding="10dp"
+        android:background="#ff1ff1f1"
+        android:layout_margin="10dp"/>
 
     <TextView
-        android:id="@+id/textNum"
+        android:id="@+id/byteView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        android:text="10/80 바이트"
-        android:textSize="18sp" />
+        android:gravity="right"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:text="0 / 80 바이트"
+        android:layout_marginRight="10dp"/>
 
     <LinearLayout
-        android:id="@+id/buttonPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:gravity="center">
-
         <Button
-            android:id="@+id/send"
+            android:id="@+id/sendButton"
+            android:text="전송"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="전송" />
-
+            android:onClick="onSendButtonClicked"/>
         <Button
-            android:id="@+id/close"
+            android:id="@+id/closeButton"
+            android:text="닫기"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="닫기" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>
