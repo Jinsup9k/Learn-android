@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d247a6-7516-43bb-9ab0-6cff193342b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SampleScrollView/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SampleScrollView/.idea/gradle.xml" afterDir="false" />
-    </list>
+    <list default="true" id="43d247a6-7516-43bb-9ab0-6cff193342b0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,5 +33,11 @@
       <updated>1592558806223</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="593" y="404" key="com.intellij.ide.util.TipDialog" timestamp="1594364910675">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="593" y="404" key="com.intellij.ide.util.TipDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1594364910675" />
   </component>
 </project>
