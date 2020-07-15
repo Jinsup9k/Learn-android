@@ -18,7 +18,7 @@ public class SimpleData implements Parcelable {
         message = src.readString();
     }
 
-    public static final Creator CREATOR = new Creator() {
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
 
         public SimpleData createFromParcel(Parcel in) {
             return new SimpleData(in);

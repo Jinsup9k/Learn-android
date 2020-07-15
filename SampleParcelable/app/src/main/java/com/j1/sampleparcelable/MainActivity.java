@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
 
                 SimpleData data = new SimpleData(100, "Hello, Android!");
-                intent.putExtra(KEY_SIMPLE_DATA, "data");
+                intent.putExtra(KEY_SIMPLE_DATA, data);
                 startActivityForResult(intent, REQUEST_CODE_MENU);
             }
         });
