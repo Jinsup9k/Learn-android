@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="#aaffffff">
+
+        <LinearLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usernameInput"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="ID" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="PW"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/inputLayout"
+            android:text="login" />
+    </RelativeLayout>
+
+</RelativeLayout>
