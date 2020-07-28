@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SampleActionBar1</string>
+    <string name="menu_setting">설정</string>
+    <string name="menu_search">검색</string>
+    <string name="menu_refresh">새로고침</string>
 </resources>
