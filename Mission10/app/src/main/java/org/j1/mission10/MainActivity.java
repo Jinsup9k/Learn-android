@@ -13,6 +13,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
@@ -47,6 +48,47 @@ public class MainActivity extends AppCompatActivity
         fragment3 = new Fragment3();
 
         getSupportFragmentManager().beginTransaction().add(R.id.container, fragment1).commit();
+
+        BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
+        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.tab1:
+                        Toast.makeText(getApplicationContext(), "첫 번째 탭 선택됨", Toast.LENGTH_LONG).show();
+
+                        fragment1 = new Fragment1();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, fragment1).commit();
+
+                        toolbar.setTitle("첫번째 화면");
+
+                        return true;
+                    case R.id.tab2:
+                        Toast.makeText(getApplicationContext(), "두 번째 탭 선택됨", Toast.LENGTH_LONG).show();
+
+                        fragment2 = new Fragment2();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, fragment2).commit();
+
+                        toolbar.setTitle("두번째 화면");
+
+                        return true;
+                    case R.id.tab3:
+                        Toast.makeText(getApplicationContext(), "세 번째 탭 선택됨", Toast.LENGTH_LONG).show();
+
+                        fragment3 = new Fragment3();
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.container, fragment3).commit();
+
+                        toolbar.setTitle("세번째 화면");
+
+                        return true;
+                }
+
+                return false;
+            }
+        });
     }
 
     @Override
